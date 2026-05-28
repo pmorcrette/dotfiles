@@ -91,7 +91,6 @@
 
     shellAliases = {
       # éditeur
-      hx = "helix";
       # ls (on garde GNU ls)
       ls = "ls --color=yes";
       ll = "grc ls --color=yes -lhF";
@@ -100,16 +99,16 @@
       # cat -> bat
       cat = "bat";
       # grc sysadmin
-      ps         = "grc --colour=auto ps";
-      df         = "grc --colour=auto df";
-      du         = "grc --colour=auto du";
-      mount      = "grc --colour=auto mount";
-      netstat    = "grc --colour=auto netstat";
-      ping       = "grc --colour=auto ping";
-      traceroute = "grc --colour=auto traceroute";
-      dig        = "grc --colour=auto dig";
-      ip         = "grc --colour=auto ip";
-      lsof       = "grc --colour=auto lsof";
+      ps         = "grc --colour=on ps";
+      df         = "grc --colour=on df";
+      du         = "grc --colour=on du";
+      mount      = "grc --colour=on mount";
+      netstat    = "grc --colour=on netstat";
+      ping       = "grc --colour=on ping";
+      traceroute = "grc --colour=on traceroute";
+      dig        = "grc --colour=on dig";
+      ip         = "grc --colour=on ip";
+      lsof       = "grc --colour=on lsof";
       # git / lazygit
       lg = "lazygit";
       g  = "git";
