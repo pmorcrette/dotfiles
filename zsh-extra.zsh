@@ -41,7 +41,7 @@ zstyle ':completion:*:warnings' format 'Aucune complétion pour : %d'
 
 # Recherche fuzzy d'un PID
 pid() {
-    ps -eF | fzf --ansi --header-lines=1 --height=60% | awk '{print $2}'
+    grc --colour=on ps -eF | fzf --ansi --header-lines=1 --height=60% | awk '{print $2}'
 }
 
 # Kill fuzzy

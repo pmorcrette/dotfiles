@@ -128,6 +128,37 @@
   home.sessionVariables = {
     # EDITOR = "emacs";
   };
+  programs.helix = {
+    enable = true;
+    settings = {
+      theme = "kanagawa";
+      editor = {
+        cursorline = true;
+        cursorcolumn = true;
+        line-number = "relative";
+        statusline = {
+        right = [
+          "diagnostics"
+          "selections"
+          "register"
+          "position"
+          "file-encoding"
+          "total-line-numbers"
+        ];
+        };
+      };
+      keys = {
+        normal.space = {
+          space = [
+            ":write-all"
+            ":sh lazygit"
+            ":redraw"
+            ":reload-all"
+          ];
+        };
+      };
+    };
+  };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
