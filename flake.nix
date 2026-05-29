@@ -22,7 +22,7 @@
 
         # Specify your home configuration modules here, for example,
         # the path to your home.nix.
-        modules = [ ./home.nix ./zsh/zsh.nix ./tmux.nix ];
+        modules = [ ./home.nix ./zsh/zsh.nix ./tmux/tmux.nix ];
 
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix
