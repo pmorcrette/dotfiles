@@ -59,7 +59,7 @@
 
     # --- Système (complète btop/lnav) ---
     procs
-    du-dust
+    dust
     duf # binaires: procs / dust / duf
 
     # --- Devops & scripting ---
@@ -179,19 +179,24 @@
     enable = true;
     nix-direnv.enable = true;
   };
-  programs.git = {
+  programs.difftastic = {
     enable = true;
-    difftastic = {
-      enable = true; # difft devient le diff par défaut de `git diff`
+    git.enable = true;
+    options = {
       background = "dark";
       display = "side-by-side";
     };
-    aliases = {
-      # forcer difft aussi sur log/show (qui n'utilisent pas diff.external par défaut)
-      dl = "log -p --ext-diff";
-      ds = "show --ext-diff";
-      # repli ponctuel sur le diff unifié classique
-      rawdiff = "diff --no-ext-diff";
+  };
+  programs.git = {
+    enable = true;
+    settings = {
+      aliases = {
+        # forcer difft aussi sur log/show (qui n'utilisent pas diff.external par défaut)
+        dl = "log -p --ext-diff";
+        ds = "show --ext-diff";
+        # repli ponctuel sur le diff unifié classique
+        rawdiff = "diff --no-ext-diff";
+      };
     };
   };
   programs.helix = {
