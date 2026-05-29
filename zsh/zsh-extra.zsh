@@ -87,15 +87,18 @@ extract() {
     fi
 }
 
-# Recherche dans le contenu des fichiers avec preview interactif
 rgf() {
+  local file line
+  IFS=: read -r file line _ < <(
     rg --color=always --line-number --no-heading --smart-case "${*:-}" |
-        fzf --ansi \
-            --delimiter=: \
-            --preview 'bat --color=always --highlight-line {2} {1}' \
-            --preview-window 'right:60%:+{2}+3/2'
+      fzf --ansi --delimiter=: \
+          --preview 'bat --color=always --highlight-line {2} {1}' \
+          --preview-window 'right:60%:+{2}+3/2'
+  )
+  [[ -n "$file" ]] && hx "$file:$line"
 }
 
+source <(carapace _carapace zsh)
 # ============================================================================
 #  Override local (secrets / alias machine-spécifiques, hors dépôt Nix)
 # ============================================================================
