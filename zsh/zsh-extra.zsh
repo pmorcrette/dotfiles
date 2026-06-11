@@ -14,7 +14,7 @@ setopt NO_CASE_GLOB              # globbing insensible à la casse
 setopt NUMERIC_GLOB_SORT         # tri numérique naturel
 setopt INTERACTIVE_COMMENTS      # # en interactif autorisés
 setopt NO_BEEP                   # silence
-
+bindkey -e
 # --- fzf-tab : configuration (le plugin est chargé via programs.zsh.plugins) -
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color=always $realpath 2>/dev/null'
 zstyle ':fzf-tab:complete:*:*' fzf-preview 'bat --color=always --line-range :40 $realpath 2>/dev/null || ls -la $realpath'

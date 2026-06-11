@@ -130,8 +130,8 @@
       gd = "git diff";
       gl = "git log --oneline --graph --decorate -20";
       # dig
-      digall = "dig -all +answer";
-      digrev = "dig -all +answer -x";
+      d = "dig +noall +answer";
+      dx = "dig +noall +answer -x";
       # logs
       jf = "journalctl -f | ccze -A";
       jfu = "journalctl -fu";
