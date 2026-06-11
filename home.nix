@@ -22,7 +22,10 @@
     bc
     cmake-language-server
     dockerfile-language-server
+    docker-compose
     mesonlsp
+    typst
+    llama-cpp
     # --- Réseau / diag (tu n'as que dig/ping/traceroute wrappés grc) ---
     trippy # binaire: trip — mtr en bien mieux, TUI live
     bandwhich # quel *process* consomme la bande passante
