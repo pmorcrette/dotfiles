@@ -59,6 +59,7 @@
     # --- Git (au-delà de lazygit/delta/jj) ---
     difftastic # binaire: difft — diff structurel syntaxe-aware
     git-absorb # fixup! automatique sur les bons commits
+    koji
 
     # --- Système (complète btop/lnav) ---
     procs
