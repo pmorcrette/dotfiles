@@ -19,6 +19,8 @@
     fd
     ripgrep
     helix
+    zsh-forgit
+    zsh-fzf-tab
   ];
 
   # bat : thème (remplace export BAT_THEME)
@@ -90,6 +92,11 @@
         src = pkgs.zsh-fzf-tab;
         file = "share/fzf-tab/fzf-tab.plugin.zsh";
       }
+      {
+        name = "forgit";
+        src = pkgs.zsh-forgit;
+        file = "share/zsh/site-functions/_git-forgit";
+      }
     ];
 
     history = {
@@ -148,6 +155,7 @@
       MANPAGER = "sh -c 'col -bx | bat -l man -p'";
       MANROFFOPT = "-c";
       LESS = "-R -i -F -X --mouse";
+      TERM = "xterm-256color";
     };
 
     # Tout le zsh brut sans équivalent d'option :
