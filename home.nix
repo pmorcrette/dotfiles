@@ -22,7 +22,7 @@
     bc
     cmake-language-server
     dockerfile-language-server
-    docker-compose
+    docker-compose-language-service
     mesonlsp
     typst
     llama-cpp
