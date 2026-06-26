@@ -1,5 +1,5 @@
 {
-  description = "Home Manager configuration of gyfm3853";
+  description = "Home Manager configuration of dakaedr";
 
   inputs = {
     # Specify the source of Home Manager and Nixpkgs.
@@ -17,7 +17,7 @@
       pkgs = nixpkgs.legacyPackages.${system};
     in
     {
-      homeConfigurations."gyfm3853" = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations."dakaedr" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
         # Specify your home configuration modules here, for example,

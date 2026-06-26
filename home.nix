@@ -1,10 +1,14 @@
 { config, pkgs, ... }:
 
 {
+  nix = {
+    package = pkgs.nix;
+    settings.experimental-features = [ "nix-command" "flakes" ];
+  };
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
-  home.username = "gyfm3853";
-  home.homeDirectory = "/home/gyfm3853";
+  home.username = "dakaedr";
+  home.homeDirectory = "/home/dakaedr";
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
@@ -173,7 +177,7 @@
   #
   # or
   #
-  #  /etc/profiles/per-user/gyfm3853/etc/profile.d/hm-session-vars.sh
+  #  /etc/profiles/per-user/dakaedr/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
     # EDITOR = "emacs";
