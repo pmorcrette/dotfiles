@@ -9,6 +9,7 @@ setopt NUMERIC_GLOB_SORT
 setopt INTERACTIVE_COMMENTS      
 setopt NO_BEEP
 bindkey -e
+bindkey "^[[3~" delete-char
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color=always $realpath 2>/dev/null'
 zstyle ':fzf-tab:complete:*:*' fzf-preview 'bat --color=always --line-range :40 $realpath 2>/dev/null || ls -la $realpath'
 zstyle ':fzf-tab:*' switch-group ',' '.'
