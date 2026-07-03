@@ -1,5 +1,5 @@
 {
-  description = "Home Manager configuration of gyfm3853";
+  description = "Home Manager configuration of dakaedr";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";

@@ -3,6 +3,10 @@
 {
   home.username = "gyfm3853";
   home.homeDirectory = "/home/gyfm3853";
+  nix = {
+    package = pkgs.nix;
+    settings.experimental-features = [ "nix-command" "flakes" ];
+  };
 
   home.stateVersion = "26.05"; # Please read the comment before changing.
 
