@@ -80,5 +80,7 @@ rgf() {
   [[ -n "$file" ]] && hx "$file:$line"
 }
 
-source <(carapace _carapace zsh)
+if (( $+commands[carapace] )); then
+  source <(carapace _carapace zsh)
+fi
 [[ -f "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"
