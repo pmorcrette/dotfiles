@@ -24,6 +24,7 @@
     meson
     mesonlsp
     go
+    kitty
     llama-cpp
     trippy 
     bandwhich 
@@ -75,7 +76,6 @@
     bagels
     binsider
     elixir-ls
-    emacs
     ansible-lint
     yaml-language-server
     bash-language-server

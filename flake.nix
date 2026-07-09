@@ -18,7 +18,7 @@
     {
       homeConfigurations."gyfm3853" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        modules = [ ./home.nix ./zsh/zsh.nix ./tmux/tmux.nix ];
+        modules = [ ./home.nix ./zsh/zsh.nix ./tmux/tmux.nix ./emacs/emacs.nix ];
       };
     };
 }
